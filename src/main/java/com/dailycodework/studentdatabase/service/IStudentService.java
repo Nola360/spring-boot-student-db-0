@@ -1,6 +1,6 @@
-package com.dailycodework.service;
+package com.dailycodework.studentdatabase.service;
 
-import com.dailycodework.model.Student;
+import com.dailycodework.studentdatabase.model.Student;
 
 import java.util.List;
 

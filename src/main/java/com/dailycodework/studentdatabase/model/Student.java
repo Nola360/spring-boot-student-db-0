@@ -1,27 +1,32 @@
-package com.dailycodework.model;
+package com.dailycodework.studentdatabase.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.NaturalId;
-import org.springframework.data.annotation.Id;
 
 @Entity //JPA Entity
 @Getter @Setter
 @AllArgsConstructor @NoArgsConstructor
 public class Student {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    private String lastName;
-    @NaturalId(mutable = true)
-    private String email;
+
+    @Column(name = "department")
     private String department;
 
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "first_name")
+    private String firstName;
+
+    @Column(name = "last_name")
+    private String lastName;
+
+    // getters and setters
 }
+

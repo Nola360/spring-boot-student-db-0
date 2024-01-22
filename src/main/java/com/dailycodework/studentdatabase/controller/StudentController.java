@@ -1,11 +1,10 @@
-package com.dailycodework.controller;
+package com.dailycodework.studentdatabase.controller;
 
-import com.dailycodework.model.Student;
-import com.dailycodework.service.IStudentService;
+import com.dailycodework.studentdatabase.model.Student;
+import com.dailycodework.studentdatabase.service.IStudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

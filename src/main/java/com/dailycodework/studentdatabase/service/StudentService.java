@@ -1,11 +1,12 @@
-package com.dailycodework.service;
+package com.dailycodework.studentdatabase.service;
 
-import com.dailycodework.exceptions.StudentAlreadyExistsException;
-import com.dailycodework.exceptions.StudentNotFoundException;
-import com.dailycodework.model.Student;
-import com.dailycodework.repository.StudentRepository;
-import lombok.NoArgsConstructor;
+import com.dailycodework.studentdatabase.exceptions.StudentAlreadyExistsException;
+import com.dailycodework.studentdatabase.exceptions.StudentNotFoundException;
+import com.dailycodework.studentdatabase.model.Student;
+import com.dailycodework.studentdatabase.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

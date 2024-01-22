@@ -1,6 +1,6 @@
-package com.dailycodework.repository;
+package com.dailycodework.studentdatabase.repository;
 
-import com.dailycodework.model.Student;
+import com.dailycodework.studentdatabase.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
