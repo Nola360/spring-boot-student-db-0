@@ -26,7 +26,7 @@ public class StudentService implements IStudentService{
     @Override
     public Student addStudent(Student student) {
         if(studentAlreadyExist(student.getEmail())) {
-            throw new StudentAlreadyExistsException(student.getEmail() + "Student already exists");
+            throw new StudentAlreadyExistsException(student.getEmail() + " Student already exists");
         }
         return studentRepository.save(student);
     }
@@ -53,6 +53,7 @@ public class StudentService implements IStudentService{
         if(!studentRepository.existsById(id)) {
             throw new StudentNotFoundException("This student cannot be found.");
         }
+        studentRepository.deleteById(id);
 
     }
     private boolean studentAlreadyExist(String email) {

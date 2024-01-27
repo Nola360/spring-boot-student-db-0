@@ -10,6 +10,7 @@ import org.hibernate.annotations.NaturalId;
 @Entity //JPA Entity
 @Getter @Setter
 @AllArgsConstructor @NoArgsConstructor
+
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
