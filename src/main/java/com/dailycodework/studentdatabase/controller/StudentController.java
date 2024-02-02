@@ -37,6 +37,10 @@ public class StudentController {
        studentService.deleteStudent(id);
     }
 
+    @RequestMapping(method = RequestMethod.OPTIONS, value = "/delete/{id}")
+    public ResponseEntity<?> handleOptionsRequestForDelete(@PathVariable Long id) {
+        return ResponseEntity.ok().build();
+    }
     @GetMapping("/student/{id}")
     public Student getStudentById(@PathVariable(name="id") Long id) {
         return studentService.getStudentById(id);
